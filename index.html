@@ -1,0 +1,108 @@
+<html data-framework="react" data-version="12" data-localstorage-bridge="kv-v1" style="--flash-app-safe-area-inset-top: 88px; --flash-app-safe-area-inset-right: 0px; --flash-app-safe-area-inset-bottom: 0px; --flash-app-safe-area-inset-left: 0px; --flash-app-safe-top: 88px;"><head><script>window.__flashAppLoadTraceId = "flash-app-load-1781765456894-ymuhnt87";</script>
+<script>
+console.log('[FLASH APP] boot');
+(function() {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--flash-app-safe-area-inset-top', '0px');
+    rootStyle.setProperty('--flash-app-safe-area-inset-right', '0px');
+    rootStyle.setProperty('--flash-app-safe-area-inset-bottom', '0px');
+    rootStyle.setProperty('--flash-app-safe-area-inset-left', '0px');
+    rootStyle.setProperty('--flash-app-safe-top', '0px');
+})();
+window.__fullscreen = false;
+window.addEventListener('message', function(event) {
+    const data = event && event.data;
+    if (!data) {
+        return;
+    }
+    if (data.type === 'FLASH_APP_FULLSCREEN') {
+        if (typeof data.value === 'boolean') {
+            window.__fullscreen = data.value;
+            return;
+        }
+        if (data.action === 'zoomin') {
+            window.__fullscreen = true;
+            return;
+        }
+        if (data.action === 'zoomout') {
+            window.__fullscreen = false;
+            return;
+        }
+    }
+});
+</script>
+<meta name="flash-app-html-url" content="https://render.lingguangcontent.com/p/lingguang/0a-6a32b1959fc042d765fab1ab/index.html"><script>window.__flashAppLocalStorageBridgeConfig = {"enabled":true,"mode":"kv-v1","storageKey":"__flash_app_localstorage_bridge_snapshot_v1__","storageNamespace":"flashapp-7076531f3e9d4089","artifactId":"flashapp-7076531f3e9d4089","artifactVersion":"48","htmlUrl":"https://render.lingguangcontent.com/p/lingguang/0a-6a32b1959fc042d765fab1ab/index.html","snapshot":{}};</script>
+    <meta name="asap-build-time" content="2026-06-17T14:39:10.608Z">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>報價系統 - 灵光闪应用</title>
+    <script>window.injectInfo = { env: "PROD" };</script><script>window.publicPath = "https://render.lingguangobjects.com/p/yuyan/200031800011161661/";</script><script id="app-manifest" type="application/json">
+{"navigationBar":{"visible":false,"title":"報價系統","backgroundColor":"#F5F5F0","foregroundColor":"#2D2D2D"},"name":"香港裝修傢俬報價系統","short_name":"報價系統","description":"專業的裝修傢俬報價管理工具，支持多版本對比、狀態跟進、Excel 導出","start_url":"./index.html","display":"standalone","background_color":"#F5F5F0","theme_color":"#2563EB","orientation":"any","icons":[{"src":"./assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"./assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}],"categories":["business","productivity","utilities"],"lang":"zh-HK","scope":"./","prefer_related_applications":false,"localStorage":true}
+    </script>
+    <base href="https://render.lingguangobjects.com/p/yuyan/200031800011161661/">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="application-name" content="報價系統">
+    <meta name="description" content="專業的裝修傢俬報價管理工具，支持多版本對比、狀態跟進、Excel 導出">
+    <meta name="theme-color" content="#2563EB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="報價系統">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- 離線支持 -->
+    <link rel="manifest" href="./assets/manifest-CshnAxV9.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon-16.png">
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    
+    <!-- 預連接 -->
+    <link rel="preconnect" href="https://gw.alipayobjects.com">
+    <link href="https://gw.alipayobjects.com/render/p/yuyan/180023180003946312/material-icons.css" rel="stylesheet" crossorigin="anonymous">
+    
+    
+<script type="module" src="https://render.lingguangobjects.com/p/yuyan/200031800010690812/base/base.js"></script>
+<script type="module" src="https://gw.alipayobjects.com/render/p/yuyan/180023180042934971/AudioContext2.js"></script>
+<script type="module" src="https://gw.alipayobjects.com/render/p/yuyan/180023180042934971/voice-tts-simple.js"></script>
+
+    
+    <!-- Service Worker 註冊 -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function(registration) {
+              console.log('SW 註冊成功:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('SW 註冊失敗:', error);
+            });
+        });
+      }
+    </script>
+    <script type="module" crossorigin="" src="./assets/index-D9sU5vpq.js"></script>
+    <link rel="stylesheet" crossorigin="" href="./assets/index-D9zavZRE.css">
+      <!-- asap-vite-contract:a4167c51ba36d6fb9d742332 -->
+    <meta name="asap-vite-contract" content="a4167c51ba36d6fb9d742332">
+  <script>
+    window.artifactId = "flashapp-7076531f3e9d4089";
+    window.artifactVersion = "48";
+    window.trace_id = "21a4659817817069984506959e9ae3";
+</script>
+<meta http-equiv="Content-Security-Policy" content="
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: *.alipay.com *.alipayobjects.com  *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  frame-src 'self' data: blob: *.alipay.com *.alipayobjects.com *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  connect-src 'self' data: blob: *.alipay.com *.alipayobjects.com  *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  child-src 'self' data: blob: *.alipay.com *.alipayobjects.com  *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  object-src 'self' data: blob: *.alipay.com *.alipayobjects.com  *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  base-uri 'self' *.alipay.com *.alipayobjects.com *.amap.com *.lingguang.com *.lingguangcontent.com *.lingguangobjects.com;
+  form-action 'none';
+  upgrade-insecure-requests;
+">
+
+</head>
+  <body>
+    <div id="root"><div id="container" class="min-h-screen bg-[#F5F5F0]"><header class="bg-white shadow-sm sticky top-0 z-10 print:hidden"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"><div class="flex items-center gap-3"><img src="https://render.lingguangobjects.com/p/yuyan/200031800011161661/assets/resource_4c0f1c50-BlUje_KV.png" alt="Logo" class="h-10 w-auto object-contain"><h1 class="text-lg font-bold text-gray-800">報價系統</h1></div><div class="flex gap-2 items-center"><button type="button" class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200" title="設定"><span class="material-icons text-sm align-middle">settings</span></button><button type="button" class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm"><span class="material-icons text-sm align-middle">refresh</span></button></div></div></header><main class="pb-20"><div class="max-w-6xl mx-auto p-4"><section class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-6"><div class="p-3 rounded-xl text-center" style="background-color: rgb(243, 244, 246); color: rgb(107, 114, 128);"><div class="text-2xl font-bold">1</div><div class="text-xs mt-1">未報價</div></div><div class="p-3 rounded-xl text-center" style="background-color: rgb(254, 243, 199); color: rgb(217, 119, 6);"><div class="text-2xl font-bold">1</div><div class="text-xs mt-1">報價待回覆</div></div><div class="p-3 rounded-xl text-center" style="background-color: rgb(209, 250, 229); color: rgb(5, 150, 105);"><div class="text-2xl font-bold">0</div><div class="text-xs mt-1">已簽約</div></div><div class="p-3 rounded-xl text-center" style="background-color: rgb(219, 234, 254); color: rgb(37, 99, 235);"><div class="text-2xl font-bold">0</div><div class="text-xs mt-1">施工中</div></div><div class="p-3 rounded-xl text-center" style="background-color: rgb(237, 233, 254); color: rgb(124, 58, 237);"><div class="text-2xl font-bold">0</div><div class="text-xs mt-1">完工結清</div></div><div class="p-3 rounded-xl text-center" style="background-color: rgb(254, 226, 226); color: rgb(220, 38, 38);"><div class="text-2xl font-bold">0</div><div class="text-xs mt-1">作廢</div></div></section><section class="bg-white rounded-xl p-4 shadow-sm mb-4"><div class="flex flex-wrap items-center gap-3"><div class="flex items-center gap-2"><label class="text-sm font-medium text-gray-600">訂單狀態：</label><select class="px-4 py-2 border border-gray-300 rounded-lg text-sm bg-white min-w-[140px]"><option value="all">全部狀態</option><option value="pending">未報價</option><option value="quoted">報價待回覆</option><option value="signed">已簽約</option><option value="constructing">施工中</option><option value="completed">完工結清</option><option value="cancelled">作廢</option></select></div><div class="flex-1 min-w-[200px]"><input type="text" placeholder="搜索客戶姓名 / 地址 / 報價單號 / 電話" class="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm" value=""></div><button type="button" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200"><span class="material-icons text-sm align-middle">search</span>搜索</button><button type="button" class="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 flex items-center gap-1"><span class="material-icons text-sm">add</span>新增報價單</button></div></section><section class="bg-white rounded-xl shadow-sm"><div class="p-4 border-b border-gray-100"><h2 class="text-lg font-semibold text-gray-800 flex items-center gap-2"><span class="material-icons text-blue-600">description</span>報價單列表</h2></div><div class="divide-y divide-gray-100"><div class="p-4 hover:bg-gray-50 transition-colors"><div class="flex items-start justify-between gap-4"><div class="flex-1 min-w-0"><div class="flex items-center gap-2 mb-1"><span class="font-semibold text-gray-800 text-lg">wh lee</span><span class="px-2 py-0.5 rounded-full text-xs font-medium" style="background-color: rgb(254, 243, 199); color: rgb(217, 119, 6);">報價待回覆</span><span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">V2</span><span class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-xs">最新版</span></div><div class="text-sm text-gray-600 truncate">彌敦道703-705號</div><div class="flex items-center gap-4 mt-2 text-xs text-gray-400"><span>2026-1660</span><span>2026-06-17</span><span>96083377</span><span>3 項目</span></div></div><div class="text-right flex-shrink-0"><div class="font-bold text-xl text-green-600">HK$32,088.00</div><div class="text-xs text-gray-400 mt-1">2026/6/18</div></div></div><div class="mt-3 pt-3 border-t border-gray-100"><div class="text-xs text-gray-500 mb-2">版本歷史 (2個版本):</div><div class="flex flex-wrap gap-2"><button type="button" class="px-2 py-1 rounded text-xs bg-blue-600 text-white">V2 - HK$32,088.00</button><button type="button" class="px-2 py-1 rounded text-xs bg-gray-100 text-gray-700 hover:bg-gray-200">V1 - HK$47,088.00</button></div></div><div class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100"><button type="button" class="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">編輯</button><button type="button" class="px-4 py-1.5 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700">新建版本</button><select class="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white"><option value="pending">未報價</option><option value="quoted">報價待回覆</option><option value="signed">已簽約</option><option value="constructing">施工中</option><option value="completed">完工結清</option><option value="cancelled">作廢</option></select><button type="button" class="px-4 py-1.5 bg-red-100 text-red-600 rounded-lg text-sm font-medium hover:bg-red-200">刪除</button></div></div><div class="p-4 hover:bg-gray-50 transition-colors"><div class="flex items-start justify-between gap-4"><div class="flex-1 min-w-0"><div class="flex items-center gap-2 mb-1"><span class="font-semibold text-gray-800 text-lg">wh lee</span><span class="px-2 py-0.5 rounded-full text-xs font-medium" style="background-color: rgb(243, 244, 246); color: rgb(107, 114, 128);">未報價</span></div><div class="text-sm text-gray-600 truncate">彌敦道703-705號</div><div class="flex items-center gap-4 mt-2 text-xs text-gray-400"><span>2026-1047</span><span>2026-06-17</span><span>96083377</span><span>3 項目</span></div></div><div class="text-right flex-shrink-0"><div class="font-bold text-xl text-green-600">HK$47,088.00</div><div class="text-xs text-gray-400 mt-1">2026/6/17</div></div></div><div class="mt-3 pt-3 border-t border-gray-100"><div class="text-xs text-gray-500 mb-2">版本歷史 (2個版本):</div><div class="flex flex-wrap gap-2"><button type="button" class="px-2 py-1 rounded text-xs bg-gray-100 text-gray-700 hover:bg-gray-200">V2 - HK$32,088.00</button><button type="button" class="px-2 py-1 rounded text-xs bg-blue-600 text-white">V1 - HK$47,088.00</button></div></div><div class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100"><button type="button" class="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">編輯</button><button type="button" class="px-4 py-1.5 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700">新建版本</button><select class="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white"><option value="pending">未報價</option><option value="quoted">報價待回覆</option><option value="signed">已簽約</option><option value="constructing">施工中</option><option value="completed">完工結清</option><option value="cancelled">作廢</option></select><button type="button" class="px-4 py-1.5 bg-red-100 text-red-600 rounded-lg text-sm font-medium hover:bg-red-200">刪除</button></div></div></div></section><div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"><div class="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"><div class="flex items-center justify-between mb-6"><h3 class="text-xl font-bold text-gray-800 flex items-center gap-2"><span class="material-icons text-blue-600">settings</span>系統設定</h3><button type="button" class="text-gray-400 hover:text-gray-600"><span class="material-icons">close</span></button></div><div class="space-y-4"><div><label class="block text-sm font-medium text-gray-600 mb-1">銀行名稱</label><input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" placeholder="請輸入銀行名稱" value="中國銀行（香港）"></div><div><label class="block text-sm font-medium text-gray-600 mb-1">公司名稱</label><input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" placeholder="請輸入公司名稱" value="Artisan Studio Limited"></div><div><label class="block text-sm font-medium text-gray-600 mb-1">公司帳號</label><input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" placeholder="請輸入公司帳號" value="012-586-2-109941-2"></div><div><label class="block text-sm font-medium text-gray-600 mb-1">FPS ID</label><input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm" placeholder="請輸入 FPS ID" value="121966964"></div></div><div class="mt-6 pt-4 border-t border-gray-200"><button type="button" class="w-full mb-2 px-4 py-3 bg-amber-100 text-amber-800 rounded-lg text-sm font-medium hover:bg-amber-200 flex items-center justify-center gap-2"><span class="material-icons text-lg">inventory_2</span>管理標準項目庫</button><div class="flex gap-2"><button type="button" class="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 flex items-center justify-center gap-1"><span class="material-icons text-sm">code</span>HTML 源碼</button><button type="button" class="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 flex items-center justify-center gap-1"><span class="material-icons text-sm">folder_open</span>瀏覽文件</button></div><button type="button" class="w-full mt-2 px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 flex items-center justify-center gap-1 disabled:opacity-50"><span class="material-icons text-sm">download</span>一鍵下載應用</button></div><div class="mt-6 flex gap-3"><button type="button" class="flex-1 px-4 py-3 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors">取消</button><button type="button" class="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">保存設定</button></div></div></div></div></main></div></div>
+  
+</body></html>
