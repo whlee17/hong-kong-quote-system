@@ -7,7 +7,7 @@
     "dev": "vite",
     "sandpack:css": "node scripts/build-sandpack-css.mjs",
     "sandpack:css:watch": "node scripts/build-sandpack-css.mjs --watch",
-    "build": "tsc -b && vite build && node scripts/post-build.cjs",
+    "build": "npm install --legacy-peer-deps && tsc -b && vite build && node scripts/post-build.cjs",
     "build:offline": "npm run build",
     "start:offline": "npm run build && serve -s dist -l 3000",
     "typecheck:all": "tsc -p tsconfig.app.full.json --noEmit && tsc -p tsconfig.node.json --noEmit",
