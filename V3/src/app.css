@@ -1,0 +1,114 @@
+/* 全局樣式 - 防止寬度溢出 */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#container {
+  padding-top: env(safe-area-inset-top, 0px);
+  min-height: 100vh;
+  background-color: #F5F5F0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 表格容器水平滾動 */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.overflow-x-auto table {
+  min-width: 800px;
+}
+
+/* 打印樣式優化 */
+@media print {
+  #container {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* 項目庫懸浮菜單動畫 */
+.relative.group:hover .absolute {
+  display: block;
+}
+
+/* 輸入框聚焦樣式 */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* 表格樣式優化 */
+table {
+  border-collapse: collapse;
+}
+
+/* 金額數字樣式 */
+.font-money {
+  font-family: 'HK Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 移動端適配 */
+@media (max-width: 768px) {
+  .max-w-4xl {
+    max-width: 100%;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  th, td {
+    padding: 8px 4px !important;
+  }
+}
+
+/* 按鈕點擊反饋 */
+button:active {
+  transform: scale(0.98);
+}
+
+/* 卡片陰影 */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
